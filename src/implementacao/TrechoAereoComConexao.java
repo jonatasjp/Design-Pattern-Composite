@@ -11,7 +11,7 @@ public class TrechoAereoComConexao extends TrechoAereoComEscala{
 	
 	@Override
 	public double getValor() {
-		return  getTrechoInicio().getValor() + getTrechoFim().getValor() + this.taxaconexao;
+		return  super.getValor() + this.taxaconexao;
 	}
 
 }
